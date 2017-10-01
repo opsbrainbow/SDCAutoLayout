@@ -97,6 +97,67 @@ CGFloat const SDCAutoLayoutStandardParentChildDistance = 20;
 	return constraint;
 }
 
+#pragma mark - Margins Alignment
+
+- (NSArray *)sdc_alignMarginsWithSuperView:(UIRectEdge)edges {
+    return [self sdc_alignMarginsWithSuperView:edges insets:UIEdgeInsetsZero];
+}
+
+- (NSArray *)sdc_alignMarginsWithSuperView:(UIRectEdge)edges insets:(UIEdgeInsets)insets {
+    return [self sdc_alignMargins:edges withView:self.superview insets:insets];
+}
+
+- (NSArray *)sdc_alignMargins:(UIRectEdge)edges withView:(UIView *)view {
+    return [self sdc_alignMargins:edges withView:view];
+}
+
+- (NSArray *)sdc_alignMargins:(UIRectEdge)edges withView:(UIView *)view insets:(UIEdgeInsets)insets {
+    NSMutableArray *constraints = [NSMutableArray array];
+    
+    if (edges & UIRectEdgeTop)        [constraints addObject:[self sdc_alignMargin:UIRectEdgeTop withView:view inset:insets.top]];
+    if (edges & UIRectEdgeRight)    [constraints addObject:[self sdc_alignMargin:UIRectEdgeRight withView:view inset:insets.right]];
+    if (edges & UIRectEdgeBottom)    [constraints addObject:[self sdc_alignMargin:UIRectEdgeBottom withView:view inset:insets.bottom]];
+    if (edges & UIRectEdgeLeft)        [constraints addObject:[self sdc_alignMargin:UIRectEdgeLeft withView:view inset:insets.left]];
+    
+    return constraints;
+}
+
+- (NSLayoutConstraint *)sdc_alignMargin:(UIRectEdge)edge withView:(UIView *)view inset:(CGFloat)inset {
+    return [self sdc_alignMargin:edge withMargin:edge ofView:view inset:inset];
+}
+
+- (NSLayoutConstraint *)sdc_alignMargin:(UIRectEdge)edge withMargin:(UIRectEdge)otherEdge ofView:(UIView *)view {
+    return [self sdc_alignMargin:edge withMargin:otherEdge ofView:view inset:0];
+}
+
+- (NSLayoutConstraint *)sdc_alignMargin:(UIRectEdge)edge withMargin:(UIRectEdge)otherEdge ofView:(UIView *)view inset:(CGFloat)inset {
+    UIView *commonAncestor = [self sdc_commonAncestorWithView:view];
+    
+    NSLayoutAttribute attribute = [self sdc_marginLayoutAttributeWithEdge:edge];
+    NSLayoutAttribute otherAttribute = [self sdc_marginLayoutAttributeWithEdge:otherEdge];
+    
+    if (attribute == NSLayoutAttributeNotAnAttribute || otherAttribute == NSLayoutAttributeNotAnAttribute)
+        return nil;
+    
+    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self attribute:attribute relatedBy:NSLayoutRelationEqual toItem:view attribute:otherAttribute multiplier:1 constant:inset];
+    [commonAncestor addConstraint:constraint];
+    
+    return constraint;
+}
+
+- (NSLayoutAttribute)sdc_marginLayoutAttributeWithEdge:(UIRectEdge)edge {
+    NSLayoutAttribute attribute = NSLayoutAttributeNotAnAttribute;
+    switch (edge) {
+        case UIRectEdgeTop:        attribute = NSLayoutAttributeTopMargin;        break;
+        case UIRectEdgeRight:    attribute = NSLayoutAttributeRightMargin;        break;
+        case UIRectEdgeBottom:    attribute = NSLayoutAttributeBottomMargin;    break;
+        case UIRectEdgeLeft:     attribute = NSLayoutAttributeLeftMargin;        break;
+        default: break;
+    }
+    
+    return attribute;
+}
+
 #pragma mark - Center Alignment
 
 - (NSArray *)sdc_alignCentersWithView:(UIView *)view {

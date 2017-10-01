@@ -27,6 +27,16 @@ FOUNDATION_EXPORT CGFloat const SDCAutoLayoutStandardParentChildDistance;
 - (NSLayoutConstraint *)sdc_alignEdge:(UIRectEdge)edge withEdge:(UIRectEdge)otherEdge ofView:(UIView *)view;
 - (NSLayoutConstraint *)sdc_alignEdge:(UIRectEdge)edge withEdge:(UIRectEdge)otherEdge ofView:(UIView *)view inset:(CGFloat)inset;
 
+// Aligning a view's margins with its superview
+- (NSArray *)sdc_alignMarginsWithSuperView:(UIRectEdge)edges;
+- (NSArray *)sdc_alignMarginsWithSuperView:(UIRectEdge)edges insets:(UIEdgeInsets)insets;
+
+- (NSArray *)sdc_alignMargins:(UIRectEdge)edges withView:(UIView *)view;
+- (NSArray *)sdc_alignMargins:(UIRectEdge)edges withView:(UIView *)view insets:(UIEdgeInsets)insets;
+
+- (NSLayoutConstraint *)sdc_alignMargin:(UIRectEdge)edge withMargin:(UIRectEdge)otherEdge ofView:(UIView *)view;
+- (NSLayoutConstraint *)sdc_alignMargin:(UIRectEdge)edge withMargin:(UIRectEdge)otherEdge ofView:(UIView *)view inset:(CGFloat)inset;
+
 // Aligning a view's center with another view
 - (NSArray *)sdc_alignCentersWithView:(UIView *)view;
 - (NSArray *)sdc_alignCentersWithView:(UIView *)view offset:(UIOffset)offset;
