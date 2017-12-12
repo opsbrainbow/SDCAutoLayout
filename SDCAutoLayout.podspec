@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform     =  :ios, '6.0'
   s.source       =  { :git => 'https://github.com/sberrevoets/SDCAutoLayout.git', :tag => "v#{s.version}" }
   s.source_files = 'AutoLayout/UIView+SDCAutoLayout.{h,m}'
-  s.public_header_files = 'Autolayout/UIView+SDKAutolayout.h'
+  s.public_header_files = 'Autolayout/UIView+SDCAutolayout.h'
   s.requires_arc = true
   
 # Pod Dependencies
