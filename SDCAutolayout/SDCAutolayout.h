@@ -17,4 +17,4 @@ FOUNDATION_EXPORT const unsigned char SDCAutolayoutVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <SDCAutolayout/PublicHeader.h>
 
 
-#import <AutoLayout/UIView+SDCAutoLayout.h>
+#import <SDCAutolayout/UIView+SDCAutoLayout>

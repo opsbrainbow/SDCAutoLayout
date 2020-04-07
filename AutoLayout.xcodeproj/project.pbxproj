@@ -64,7 +64,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9C6FFAF2243CCF57003F7E4B /* AutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayout.h; sourceTree = "<group>"; };
 		9CE49199243CDDA200A6D89A /* SDCAutolayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDCAutolayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE4919B243CDDA200A6D89A /* SDCAutolayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDCAutolayout.h; sourceTree = "<group>"; };
 		9CE4919C243CDDA200A6D89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,7 +137,6 @@
 		D2332949181221E5007583CC = {
 			isa = PBXGroup;
 			children = (
-				9C6FFAF2243CCF57003F7E4B /* AutoLayout.h */,
 				D233298D18161651007583CC /* README.md */,
 				D233298F181616A2007583CC /* LICENSE */,
 				D2A520191840181700837A1A /* SDCAutoLayout.podspec */,
