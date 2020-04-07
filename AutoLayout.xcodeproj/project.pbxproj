@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CE4919D243CDDA200A6D89A /* SDCAutolayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CE4919B243CDDA200A6D89A /* SDCAutolayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CE491A0243CDDA200A6D89A /* SDCAutolayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE49199243CDDA200A6D89A /* SDCAutolayout.framework */; };
+		9CE491A1243CDDA200A6D89A /* SDCAutolayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE49199243CDDA200A6D89A /* SDCAutolayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CE491A6243CDE0700A6D89A /* UIView+SDCAutoLayout.h in Sources */ = {isa = PBXBuildFile; fileRef = D233298A181221FF007583CC /* UIView+SDCAutoLayout.h */; };
+		9CE491A7243CDE3B00A6D89A /* UIView+SDCAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D233298B181221FF007583CC /* UIView+SDCAutoLayout.m */; };
 		D2332956181221E5007583CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2332955181221E5007583CC /* Foundation.framework */; };
 		D2332958181221E5007583CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2332957181221E5007583CC /* CoreGraphics.framework */; };
 		D233295A181221E5007583CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2332959181221E5007583CC /* UIKit.framework */; };
@@ -28,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9CE4919E243CDDA200A6D89A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D233294A181221E5007583CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CE49198243CDDA200A6D89A;
+			remoteInfo = SDCAutolayout;
+		};
 		D2332978181221E5007583CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D233294A181221E5007583CC /* Project object */;
@@ -37,8 +49,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9CE491A2243CDDA200A6D89A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9CE491A1243CDDA200A6D89A /* SDCAutolayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9C6FFAF2243CCF57003F7E4B /* AutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayout.h; sourceTree = "<group>"; };
+		9CE49199243CDDA200A6D89A /* SDCAutolayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDCAutolayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE4919B243CDDA200A6D89A /* SDCAutolayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDCAutolayout.h; sourceTree = "<group>"; };
+		9CE4919C243CDDA200A6D89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2332952181221E5007583CC /* AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2332955181221E5007583CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2332957181221E5007583CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,10 +95,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9CE49196243CDDA200A6D89A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D233294F181221E5007583CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE491A0243CDDA200A6D89A /* SDCAutolayout.framework in Frameworks */,
 				D2332958181221E5007583CC /* CoreGraphics.framework in Frameworks */,
 				D233295A181221E5007583CC /* UIKit.framework in Frameworks */,
 				D2332956181221E5007583CC /* Foundation.framework in Frameworks */,
@@ -89,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CE4919A243CDDA200A6D89A /* SDCAutolayout */ = {
+			isa = PBXGroup;
+			children = (
+				9CE4919B243CDDA200A6D89A /* SDCAutolayout.h */,
+				9CE4919C243CDDA200A6D89A /* Info.plist */,
+			);
+			path = SDCAutolayout;
+			sourceTree = "<group>";
+		};
 		D2332949181221E5007583CC = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +144,7 @@
 				D2A520191840181700837A1A /* SDCAutoLayout.podspec */,
 				D233295B181221E5007583CC /* AutoLayout */,
 				D233297A181221E5007583CC /* AutoLayoutTests */,
+				9CE4919A243CDDA200A6D89A /* SDCAutolayout */,
 				D2332954181221E5007583CC /* Frameworks */,
 				D2332953181221E5007583CC /* Products */,
 			);
@@ -108,6 +155,7 @@
 			children = (
 				D2332952181221E5007583CC /* AutoLayout.app */,
 				D2332973181221E5007583CC /* AutoLayoutTests.xctest */,
+				9CE49199243CDDA200A6D89A /* SDCAutolayout.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,7 +218,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9CE49194243CDDA200A6D89A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE4919D243CDDA200A6D89A /* SDCAutolayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		9CE49198243CDDA200A6D89A /* SDCAutolayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CE491A5243CDDA200A6D89A /* Build configuration list for PBXNativeTarget "SDCAutolayout" */;
+			buildPhases = (
+				9CE49194243CDDA200A6D89A /* Headers */,
+				9CE49195243CDDA200A6D89A /* Sources */,
+				9CE49196243CDDA200A6D89A /* Frameworks */,
+				9CE49197243CDDA200A6D89A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDCAutolayout;
+			productName = SDCAutolayout;
+			productReference = 9CE49199243CDDA200A6D89A /* SDCAutolayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D2332951181221E5007583CC /* AutoLayout */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2332984181221E5007583CC /* Build configuration list for PBXNativeTarget "AutoLayout" */;
@@ -178,10 +255,12 @@
 				D233294E181221E5007583CC /* Sources */,
 				D233294F181221E5007583CC /* Frameworks */,
 				D2332950181221E5007583CC /* Resources */,
+				9CE491A2243CDDA200A6D89A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9CE4919F243CDDA200A6D89A /* PBXTargetDependency */,
 			);
 			name = AutoLayout;
 			productName = AutoLayout;
@@ -216,6 +295,10 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Scotty Doesn't Code";
 				TargetAttributes = {
+					9CE49198243CDDA200A6D89A = {
+						CreatedOnToolsVersion = 11.4;
+						ProvisioningStyle = Automatic;
+					};
 					D2332972181221E5007583CC = {
 						TestTargetID = D2332951181221E5007583CC;
 					};
@@ -237,11 +320,19 @@
 			targets = (
 				D2332951181221E5007583CC /* AutoLayout */,
 				D2332972181221E5007583CC /* AutoLayoutTests */,
+				9CE49198243CDDA200A6D89A /* SDCAutolayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9CE49197243CDDA200A6D89A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2332950181221E5007583CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +357,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9CE49195243CDDA200A6D89A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE491A7243CDE3B00A6D89A /* UIView+SDCAutoLayout.m in Sources */,
+				9CE491A6243CDE0700A6D89A /* UIView+SDCAutoLayout.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D233294E181221E5007583CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +388,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9CE4919F243CDDA200A6D89A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CE49198243CDDA200A6D89A /* SDCAutolayout */;
+			targetProxy = 9CE4919E243CDDA200A6D89A /* PBXContainerItemProxy */;
+		};
 		D2332979181221E5007583CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2332951181221E5007583CC /* AutoLayout */;
@@ -323,6 +428,105 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9CE491A3243CDDA200A6D89A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SDCAutolayout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brainbow.SDCAutolayout;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9CE491A4243CDDA200A6D89A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SDCAutolayout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brainbow.SDCAutolayout;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D2332982181221E5007583CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -401,6 +605,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoLayout/AutoLayout-Prefix.pch";
 				INFOPLIST_FILE = "AutoLayout/AutoLayout-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -414,6 +619,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoLayout/AutoLayout-Prefix.pch";
 				INFOPLIST_FILE = "AutoLayout/AutoLayout-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,6 +668,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9CE491A5243CDDA200A6D89A /* Build configuration list for PBXNativeTarget "SDCAutolayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CE491A3243CDDA200A6D89A /* Debug */,
+				9CE491A4243CDDA200A6D89A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D233294D181221E5007583CC /* Build configuration list for PBXProject "AutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
