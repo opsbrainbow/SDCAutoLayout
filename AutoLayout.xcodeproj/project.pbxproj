@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C6FFAF2243CCF57003F7E4B /* AutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayout.h; sourceTree = "<group>"; };
 		D2332952181221E5007583CC /* AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2332955181221E5007583CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2332957181221E5007583CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,6 +92,7 @@
 		D2332949181221E5007583CC = {
 			isa = PBXGroup;
 			children = (
+				9C6FFAF2243CCF57003F7E4B /* AutoLayout.h */,
 				D233298D18161651007583CC /* README.md */,
 				D233298F181616A2007583CC /* LICENSE */,
 				D2A520191840181700837A1A /* SDCAutoLayout.podspec */,
@@ -224,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
